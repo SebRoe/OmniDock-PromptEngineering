@@ -12,11 +12,17 @@ class PromptManager:
     def create_chat_completion_prompt(self, *args, **kwargs):
         pass 
     
-    def save_to_file(self, response, file_path):
+    def save_to_file(self, response, prompt, file_path):
         """ Save the response to a file. Use timestamp as the file name. File should be a json file using indent = 4"""
         file_path = file_path + str(datetime.datetime.now().timestamp()) + ".json"
+        
+        data = {
+            "prompt": prompt,
+            "response": response
+        }
+        
         with open(file_path, "w") as f:
-            json.dump(response, f, indent=4)
+            json.dump(data, f, indent=4)
     
     def serialize_chat_completion_response(self, response):
         
