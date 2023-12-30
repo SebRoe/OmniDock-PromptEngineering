@@ -1,0 +1,21 @@
+{
+    "prompt": [
+        {
+            "role": "system",
+            "content": "You are an expert in E-Commerce Keyword optimization & Keyword research specifically for online marketplaces such as Amazon and a very helpful assistant designed to output JSON."
+        },
+        {
+            "role": "user",
+            "content": "\n    I have the following product details, mostly in a different language, and a list of keywords.\n    Please create a new title, description, and features list in Dutch, incorporating the original details and the keywords where possible. Optimize it for an audience on a dutch online Marketplace like BOL.com.\n    The response should be in JSON format without any additional text.\n\n\n    Original Product Details:\n    - Title: ...\n    - Category: ...\n    - Description: ...\n    - Features: ...\n    - Keywords: ...\n\n    Required Response Format:\n\n    {'Title': '...', 'Description': '...', 'Features': ['feature1', 'feature2', 'feature3']}\n"
+        }
+    ],
+    "response": {
+        "Title": "Nieuwe Titel in het Nederlands",
+        "Description": "Nieuwe Beschrijving in het Nederlands",
+        "Features": [
+            "Kenmerk 1 in het Nederlands",
+            "Kenmerk 2 in het Nederlands",
+            "Kenmerk 3 in het Nederlands"
+        ]
+    }
+}

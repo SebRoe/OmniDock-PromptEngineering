@@ -14,7 +14,7 @@ class PromptManager:
     
     def save_to_file(self, response, prompt, file_path):
         """ Save the response to a file. Use timestamp as the file name. File should be a json file using indent = 4"""
-        file_path = file_path + str(datetime.datetime.now().timestamp()) + ".json"
+        file_path = file_path + str(int(datetime.datetime.now().timestamp())) + ".json"
         
         data = {
             "prompt": prompt,
